@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects-section {
+      max-width: 1200px;
+      margin: 120px auto 50px auto; 
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .projects-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card .card-body {
+      padding: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .project-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav__content">
+      <div class="logo"><a href="myPort.html">#MyPortfolio</a></div>
+      <label for="check" class="checkbox">
+        <i class="ri-menu-line"></i>
+      </label>
+      <input type="checkbox" name="check" id="check">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="moreAboutMe.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="projects-section">
+    <h1>My HTML Works</h1>
+    <div class="project-cards">
+      
+      <a class="card" href="portfolio/Native Sport/NativeSport.html" >
+        <img src="assets/Sipathumb.png" alt="Project 1">
+        <div class="card-body">
+          <h2 class="card-title">Native Sport Info: Sipa</h2>
+          <p class="card-text"> This HTML project describes the native Filipino sports, SIPA. My very first project in implementing HTML and CSS.</p>
+        </div>
+      </a>
+
+      <a class="card" href="portfolio/Top10Vids/MA3_Lim.html" >
+        <img src="assets/top10vids.png" alt="Project 2">
+        <div class="card-body">
+          <h2 class="card-title">Top 10 Videos</h2>
+          <p class="card-text">List of Top 10 videos, highlighting the use of hyperlinks. My very first project that made use of using hyperlinks to connect different HTMLs together.</p>
+        </div>
+      </a>
+
+      <a class="card" href="portfolio/Athlete Bio/index.html" >
+        <img src="assets/athlete.png" alt="Project 3">
+        <div class="card-body">
+          <h2 class="card-title">Athelete Bio</h2>
+          <p class="card-text">An athlete bio of a certain athlete. My very first work that tackled on HTML, CSS, and the use of Hyperlinks. Simulating a basic functional website.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
